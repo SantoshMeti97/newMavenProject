@@ -60,6 +60,7 @@ public class BaseClass {
 
     //RandomStringUtils -->> used to get random alphabets and numbers
     //import org.apache.commons.lang3.RandomStringUtils;  -->> dependency
+
     public String randomString(){
         // generate a random string of 5 alphabetic characters
         String generatedString = RandomStringUtils.randomAlphabetic(5);
