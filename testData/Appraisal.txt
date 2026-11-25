@@ -1,0 +1,46 @@
+1.Requirement gathering
+Effective (gap free) capture and documentation of Customer requirements: 
+
+For this FY, I have captured and created the documentations for the works I have done. some of them are listed below. 
+1. Workiva SAML Certificate renew
+2. Active 8 Annual review.
+3. FileNet P8 _Digitization of BAV Files (in progress)
+4. Athora.com Website migration and DNS update
+5. Major incident management process
+6. Finance Group Leavers process.
+
+
+
+2. Requirement gathering
+Process Parameters :Comply with TCS and Athora Processes. Includes Mandatory Trainings, Timesheets (Ultimatix), Leave Planning.
+
+
+Being L & D SPOC for Athora, i have made it sure that i have completed all the TCS and Athora mandatory trainings within in the deadlines and also trying to achieve 100% compliance from the team by following up with the defaulters. 
+I have updated the timesheet for all the working days and informed my planned leaves with the team at least 2 to 3 months before to make sure there will be a backup during my absence. Also applied my sick leaves and planned leaves in the system and get them approved from the manager
+
+3. Requirement gathering
+Capability - Enhance the Capability in the in-scope area both technically and interpersonally by a. Participating in cross skilling and enhancing Athora application knowledge (Application, Infrastructure, Systems, Domain), Enriching TCS knowledgebase.
+
+This year has been a very interesting and learning year, as i had taken a part in many new applications, like athora.com, tagetik, PhinAMV, Clearwater etc, all these applications possess different works and i am happy that i had understood and completed the works assigned to me for these applications. Also i had given KT to my co peers for some of the applications i have been handling like Workiva, PhinAMV, FileNet P8 to help in cross skilling.
+
+4.Requirement gathering
+Resolution of tickets within SLA.
+
+All the tickets including SR, INC, CR were resolved within SLA for this FY.
+
+5. Gap Analysis
+Requirements gathering /capturing within defined timeline /SLA.
+
+I have resolved all the tickets assigned to me within SLA. I had collected the required information's from the caller/Requester and made sure Business issues are resolved withing agreed timelines. 
+This year i had invested more time in learning FileNet P8 new Desktop and OS creation for the new requirement where business needed a new Archive to store the HR BAV documents. I have connected with business multiple times to collect the required information and reviewed the requirement documents to make sure there will be no mistakes in naming and the activity in Dev environment and the testing is pending with Business.
+
+6. Personal Development
+Acquire any internal or External certification. Yearly Minimum 1.
+
+For this FY, i have completed Microsoft azure Fundamentals (AZ-900)certificate from Udemy and registered for Power BI certification training that is going to be conducted from Jan 19th
+
+
+7. Personal Development
+WFO Compliance Minimum 85% should be maintained in every quarter.
+I have maintained more than 95% attendance for every quarter and most of the months i had achieved 100% attendance.
+

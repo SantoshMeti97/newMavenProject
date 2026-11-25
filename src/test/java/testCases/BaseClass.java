@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -30,7 +31,7 @@ public class BaseClass {
     public Properties p;
     @BeforeClass(groups={"Sanity", "Regression", "Master"})
     @Parameters({"os","browser"})
-    public void setUp(String os,String br) throws IOException {
+    public void setUp(@Optional("windows") String os, @Optional("chrome") String br) throws IOException {
 //        logger= LogManager.getLogger(this.getClass());
 
         //Loading config.properties file
