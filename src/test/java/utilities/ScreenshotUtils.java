@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotUtils {
 
     private static final DateTimeFormatter TIMESTAMP_FORMAT =
-            DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss_SSS");
+            DateTimeFormatter.ofPattern("yyyy-MM-dd_HH.mm.ss_SSS");
 
     public static String takeScreenshot(WebDriver driver, String testName) {
         try {

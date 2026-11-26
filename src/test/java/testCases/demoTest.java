@@ -9,17 +9,28 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestListener;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.MyAccountPage;
 import pageObjects.loginPage;
+import utilities.ExtentReportManager;
 
 import java.time.Duration;
 import java.util.Set;
 
+import static testCases.BaseClass.driver;
+import static utilities.ScreenshotUtils.takeScreenshot;
+import static utilities.WaitUtils.waitForVisibility;
+
 //import static jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle.header;
 
+@Listeners(ExtentReportManager.class)
 public class demoTest{
+
+    protected By fileDownloaderText = By.xpath("//h3[text()='File Downloader']");
+
 @Test(priority = 1)
     public void fileUpload() throws InterruptedException {
        // logger.info("********* Starting TC02_LoginTest **********");
@@ -88,17 +99,19 @@ public class demoTest{
         driver.manage().window().maximize();
         System.out.println("Current page : "+driver.getTitle());
 
-        WebElement fileDownloaderBtn= driver.findElement(By.linkText("File Download"));
-        fileDownloaderBtn.click();
+//        WebElement fileDownloaderBtn= driver.findElement(By.linkText("File Download"));
+//        fileDownloaderBtn.click();
 
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement fileDownloaderText=driver.findElement(By.xpath("//h3[text()='File Downloader']"));
+//        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+//        WebElement fileDownloaderText=driver.findElement(By.xpath("//h3[text()='File Downloader']"));
+//        wait.until(ExpectedConditions.visibilityOf(fileDownloaderText));
 
-        wait.until(ExpectedConditions.visibilityOf(fileDownloaderText));
-
-        driver.findElement(By.linkText("1-upload-probe.txt")).click();
-
-         Thread.sleep(2000);
+        waitForVisibility(driver,fileDownloaderText);
+        WebElement firstFile=driver.findElement(By.xpath("//h3[text()='File Downloader']/following-sibling::a[1]"));
+        firstFile.click();
+        Thread.sleep(5000);
+//        takeScreenshot(driver, "File Downloaded ");
+//         Thread.sleep(2000);
         driver.close();
     }
 }
